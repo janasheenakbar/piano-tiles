@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+   /* -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;*/
+}
+body{
+ background-repeat: no-repeat;
+background-attachment:scroll;
+background-image:url("piano.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.keys{
+border:7px solid black;
+border-radius:50px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(255,25,20,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+margin:40px 0;
+float:center;
+margin: 5% 10% ;
+height:30vh;
+padding:30px 10px 20px 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+
+} 
+ #header{
+	 margin:10% 0 0 0;
+	 text-align:center;
+	 font-size:6rem;
+	 font-family:arial;
+	 align-items:center;
+background-image:linear-gradient(black,red,black);
+	 -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+ }
+.key{
+	
+	transition:all .09s;
+    cursor:pointer;
+    border: 2px solid black;
+	border-radius:40px;
+    width: 45px;
+    padding:2px 2px 2px 2px;
+    margin: 5px 5px;
+    background-color: rgb(255,255,255);
+}
+.key:hover{
+  
+    border: 2px solid rgba(255, 76, 246, 0.411);
+    transition: 0s;
+}
+
+.playing{
+	transform:scale(1);
+    border: 2px solid red;
+	background-color:#fff;
+}
+.letter{
+	padding:100% 0 0 0;
+}
+kbd,span{
+	border-radius:40px 40px 0 0 ;
+    display: block;
+    text-align: center;
+    padding: 0 5px;
+}
+
+
+kbd{
+	height:80%;
+	margin-top:0px;
+    font-size:2rem;
+    border: 0px solid rgba(0, 0, 0,0.1);
+    color:rgb(255,255,255);
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0,0.9);
+}
+
+@media screen and (min-width:375px){
+	
+.keys{
+		margin:40vh 0;
+		
+display: flex;
+flex-wrap: wrap;
+	 }
+
+
+.letter{
+	
+		font-size:2rem;
+}	
+	
+span{
+    font-size:1rem;
+}
+	
+}
+@media screen and (min-width:375px){
+
+}
